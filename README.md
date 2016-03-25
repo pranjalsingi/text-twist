@@ -1,4 +1,4 @@
-# Here is a test twist game for you
+# Here is a Text Twist game for you
 For deploying , head to cloud 9, make a new workspace and clone this repo by pasting the URL.
 
 You should have php5 installed and also sqlite in your cloud 9
