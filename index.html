@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style type="text/css">
+            #box {
+                border: 2px solid black;
+                background-color: #ADD8E6;
+                width:100px;
+                height:20px;
+                text-align: center;
+                margin:5px;
+                display:inline-block;
+                padding:5px;
+            }
+            
+            #game {
+                display:none;
+            }
+            
+            #new-game {
+                left:auto;
+                right:auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="start">
+            <h1>Here is a Text Twist game</h1>
+            <h3>Basic understanding</h3>
+            <ul>
+                <li>There will be a random word generated each time you play a new game</li>
+                <li>You can form words by choosing letters from the ramdom word</li>
+                <li>A word should have atleast 2 letters</li>
+                <li>After pressing the start button just start typing letters</li>
+                <li>Press Enter when you try any scrabble word</li>
+                <li>Score is dependent on the length of Scrabble word</li>
+            </ul>
+            <button id="butt">Click to Start the game</button>
+        </div>
+        <div id="game">
+            <h1 id="random"></h1>
+            <h3 id="count"></h3>
+            <h4 id="inter"></h4>
+            <h4 id="letters-left"></h4>
+            <p id="status"></p>
+            <h4>Correct guessed scrabbles would be shown below</h4>
+            <div id="words-made">
+                
+            </div>
+            <button id="new-game">Start another game</button>
+        </div>
+        <script type="text/javascript" src="app.js"></script>
+    </body>
+</html>
