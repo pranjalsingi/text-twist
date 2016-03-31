@@ -80,7 +80,7 @@ var isWord = function(wrd){
 }
 
 document.addEventListener('DOMContentLoaded', function(ev){
-    URL = "https://text-twist-pranjalsingi.c9users.io/randomWord.php";
+    URL = "randomWord.php";
     getWords(URL);
 })
 
