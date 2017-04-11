@@ -116,7 +116,8 @@ document.querySelector('#new-game').addEventListener('click', function(ev){
 })
 
 document.addEventListener('keypress', function(ev) {
-    var code = ev.keyCode;
+    //console.log("event", ev);
+    var code = ev.charCode; // Changed keyCode to charCode
     if((code >= 65 && code <=90) || (code >= 97 && code <=122)){
       updateLettersLeft(String.fromCharCode(code).toUpperCase());
       inter.push(String.fromCharCode(code).toUpperCase());
@@ -124,7 +125,7 @@ document.addEventListener('keypress', function(ev) {
       showInter.innerHTML = "You made : "+inter.join('');
       console.log(inter);
     }
-    else if(code == 13){
+    else if(code == 0){ // charCode for ENTER is 0
       var lastWord = inter.join('');
       var status = isWord(lastWord);
       letters_left = random_word;
