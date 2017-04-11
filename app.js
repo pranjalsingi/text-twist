@@ -80,7 +80,7 @@ var isWord = function(wrd){
 }
 
 document.addEventListener('DOMContentLoaded', function(ev){
-    URL = "randomWord.php";
+    URL = "http://104.131.4.157:3000/randomWord.php";
     getWords(URL);
 })
 
